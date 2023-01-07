@@ -1,0 +1,1053 @@
+local ScriptGuis = Instance.new("ScreenGui")
+ScriptGuis.Name = "ScriptGuis"
+ScriptGuis.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+local AimbotGui = Instance.new("Frame")
+AimbotGui.Name = "AimbotGui"
+AimbotGui.ZIndex = 6
+AimbotGui.Size = UDim2.new(0.276434, 0, 0.773639, 0)
+AimbotGui.BackgroundTransparency = 1
+AimbotGui.Position = UDim2.new(0.0193504, 0, 0.1130985, 0)
+AimbotGui.BorderSizePixel = 0
+AimbotGui.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+AimbotGui.Parent = ScriptGuis
+
+local Border = Instance.new("Frame")
+Border.Name = "Border"
+Border.Size = UDim2.new(1, 0, 1, 0)
+Border.BackgroundTransparency = 0.4
+Border.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Border.Parent = AimbotGui
+
+local UICorner = Instance.new("UICorner")
+UICorner.Parent = Border
+
+local SecondaryColor = Instance.new("Color3Value")
+SecondaryColor.Name = "SecondaryColor"
+SecondaryColor.Parent = Border
+
+local Pivs = Instance.new("Folder")
+Pivs.Name = "Pivs"
+Pivs.Parent = AimbotGui
+
+local Current = Instance.new("ImageButton")
+Current.Name = "Current"
+Current.ZIndex = 5
+Current.Size = UDim2.new(0.0375, 0, 0.0296296, 0)
+Current.BackgroundTransparency = 0.4
+Current.Position = UDim2.new(-1.e-07, 0, 0.4685186, 0)
+Current.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Current.ImageTransparency = 1
+Current.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Current.Parent = Pivs
+
+local UICorner1 = Instance.new("UICorner")
+UICorner1.Parent = Current
+
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+UIAspectRatioConstraint.Parent = Current
+
+local SecondaryColor1 = Instance.new("Color3Value")
+SecondaryColor1.Name = "SecondaryColor"
+SecondaryColor1.Parent = Current
+
+local Piv = Instance.new("ImageButton")
+Piv.Name = "Piv"
+Piv.ZIndex = 5
+Piv.Size = UDim2.new(0.0375, 0, 0.0296296, 0)
+Piv.BackgroundTransparency = 0.8
+Piv.Position = UDim2.new(0.9624999, 0, 0.4685186, 0)
+Piv.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Piv.ImageTransparency = 1
+Piv.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Piv.Parent = Pivs
+
+local UICorner2 = Instance.new("UICorner")
+UICorner2.Parent = Piv
+
+local UIAspectRatioConstraint1 = Instance.new("UIAspectRatioConstraint")
+UIAspectRatioConstraint1.Parent = Piv
+
+local SecondaryColor2 = Instance.new("Color3Value")
+SecondaryColor2.Name = "SecondaryColor"
+SecondaryColor2.Parent = Piv
+
+local Piv1 = Instance.new("ImageButton")
+Piv1.Name = "Piv"
+Piv1.ZIndex = 5
+Piv1.Size = UDim2.new(0.0375, 0, 0.0296296, 0)
+Piv1.BackgroundTransparency = 0.8
+Piv1.Position = UDim2.new(0.9624999, 0, 0.9703704, 0)
+Piv1.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Piv1.ImageTransparency = 1
+Piv1.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Piv1.Parent = Pivs
+
+local UICorner3 = Instance.new("UICorner")
+UICorner3.Parent = Piv1
+
+local UIAspectRatioConstraint2 = Instance.new("UIAspectRatioConstraint")
+UIAspectRatioConstraint2.Parent = Piv1
+
+local SecondaryColor3 = Instance.new("Color3Value")
+SecondaryColor3.Name = "SecondaryColor"
+SecondaryColor3.Parent = Piv1
+
+local Piv2 = Instance.new("ImageButton")
+Piv2.Name = "Piv"
+Piv2.ZIndex = 5
+Piv2.Size = UDim2.new(0.0375, 0, 0.0296296, 0)
+Piv2.BackgroundTransparency = 0.8
+Piv2.Position = UDim2.new(-1.e-07, 0, 0.9703704, 0)
+Piv2.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Piv2.ImageTransparency = 1
+Piv2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Piv2.Parent = Pivs
+
+local UICorner4 = Instance.new("UICorner")
+UICorner4.Parent = Piv2
+
+local UIAspectRatioConstraint3 = Instance.new("UIAspectRatioConstraint")
+UIAspectRatioConstraint3.Parent = Piv2
+
+local SecondaryColor4 = Instance.new("Color3Value")
+SecondaryColor4.Name = "SecondaryColor"
+SecondaryColor4.Parent = Piv2
+
+local Piv3 = Instance.new("ImageButton")
+Piv3.Name = "Piv"
+Piv3.ZIndex = 5
+Piv3.Size = UDim2.new(0.0375, 0, 0.0296296, 0)
+Piv3.BackgroundTransparency = 0.8
+Piv3.Position = UDim2.new(0.9624999, 0, 0.0037038, 0)
+Piv3.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Piv3.ImageTransparency = 1
+Piv3.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Piv3.Parent = Pivs
+
+local UICorner5 = Instance.new("UICorner")
+UICorner5.Parent = Piv3
+
+local UIAspectRatioConstraint4 = Instance.new("UIAspectRatioConstraint")
+UIAspectRatioConstraint4.Parent = Piv3
+
+local SecondaryColor5 = Instance.new("Color3Value")
+SecondaryColor5.Name = "SecondaryColor"
+SecondaryColor5.Parent = Piv3
+
+local Piv4 = Instance.new("ImageButton")
+Piv4.Name = "Piv"
+Piv4.ZIndex = 5
+Piv4.Size = UDim2.new(0.0375, 0, 0.0296296, 0)
+Piv4.BackgroundTransparency = 0.8
+Piv4.Position = UDim2.new(-1.e-07, 0, 0.0037038, 0)
+Piv4.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Piv4.ImageTransparency = 1
+Piv4.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Piv4.Parent = Pivs
+
+local UICorner6 = Instance.new("UICorner")
+UICorner6.Parent = Piv4
+
+local UIAspectRatioConstraint5 = Instance.new("UIAspectRatioConstraint")
+UIAspectRatioConstraint5.Parent = Piv4
+
+local SecondaryColor6 = Instance.new("Color3Value")
+SecondaryColor6.Name = "SecondaryColor"
+SecondaryColor6.Parent = Piv4
+
+local Piv5 = Instance.new("ImageButton")
+Piv5.Name = "Piv"
+Piv5.ZIndex = 5
+Piv5.Size = UDim2.new(0.0375, 0, 0.0296296, 0)
+Piv5.BackgroundTransparency = 0.8
+Piv5.Position = UDim2.new(0.4749998, 0, 0.9703704, 0)
+Piv5.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Piv5.ImageTransparency = 1
+Piv5.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Piv5.Parent = Pivs
+
+local UICorner7 = Instance.new("UICorner")
+UICorner7.Parent = Piv5
+
+local UIAspectRatioConstraint6 = Instance.new("UIAspectRatioConstraint")
+UIAspectRatioConstraint6.Parent = Piv5
+
+local SecondaryColor7 = Instance.new("Color3Value")
+SecondaryColor7.Name = "SecondaryColor"
+SecondaryColor7.Parent = Piv5
+
+local Piv6 = Instance.new("ImageButton")
+Piv6.Name = "Piv"
+Piv6.ZIndex = 5
+Piv6.Size = UDim2.new(0.0375, 0, 0.0296296, 0)
+Piv6.BackgroundTransparency = 0.8
+Piv6.Position = UDim2.new(0.4749998, 0, 1.e-07, 0)
+Piv6.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Piv6.ImageTransparency = 1
+Piv6.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Piv6.Parent = Pivs
+
+local UICorner8 = Instance.new("UICorner")
+UICorner8.Parent = Piv6
+
+local UIAspectRatioConstraint7 = Instance.new("UIAspectRatioConstraint")
+UIAspectRatioConstraint7.Parent = Piv6
+
+local SecondaryColor8 = Instance.new("Color3Value")
+SecondaryColor8.Name = "SecondaryColor"
+SecondaryColor8.Parent = Piv6
+
+local UICorner9 = Instance.new("UICorner")
+UICorner9.Parent = AimbotGui
+
+local Scale = Instance.new("UIScale")
+Scale.Name = "Scale"
+Scale.Parent = AimbotGui
+
+local Main = Instance.new("Frame")
+Main.Name = "Main"
+Main.AnchorPoint = Vector2.new(0.5, 0.5)
+Main.Size = UDim2.new(0.99, 0, 0.9925926, 0)
+Main.BackgroundTransparency = 0.4
+Main.Position = UDim2.new(0.5, 0, 0.5, 0)
+Main.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+Main.Parent = AimbotGui
+
+local UICorner10 = Instance.new("UICorner")
+UICorner10.Parent = Main
+
+local Toggles = Instance.new("Folder")
+Toggles.Name = "Toggles"
+Toggles.Parent = Main
+
+local AimbotToggle = Instance.new("TextLabel")
+AimbotToggle.Name = "AimbotToggle"
+AimbotToggle.Size = UDim2.new(0.5050505, 0, 0.0597495, 0)
+AimbotToggle.BackgroundTransparency = 1
+AimbotToggle.Position = UDim2.new(0.2474747, 0, 0.0429131, 0)
+AimbotToggle.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+AimbotToggle.FontSize = Enum.FontSize.Size14
+AimbotToggle.TextSize = 14
+AimbotToggle.TextColor3 = Color3.fromRGB(220, 204, 255)
+AimbotToggle.Text = "Aimbot"
+AimbotToggle.TextWrapped = true
+AimbotToggle.Font = Enum.Font.Nunito
+AimbotToggle.TextWrap = true
+AimbotToggle.TextScaled = true
+AimbotToggle.Parent = Toggles
+
+local UICorner11 = Instance.new("UICorner")
+UICorner11.Parent = AimbotToggle
+
+local Toggle = Instance.new("Frame")
+Toggle.Name = "Toggle"
+Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
+Toggle.Size = UDim2.new(0.9800001, 0, 1.4363443, 0)
+Toggle.BackgroundTransparency = 0.4
+Toggle.Position = UDim2.new(0.4899998, 0, 1.7173672, 0)
+Toggle.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Toggle.Parent = AimbotToggle
+
+local UICorner12 = Instance.new("UICorner")
+UICorner12.Parent = Toggle
+
+local Button = Instance.new("Frame")
+Button.Name = "Button"
+Button.AnchorPoint = Vector2.new(0.5, 0.5)
+Button.Size = UDim2.new(0.9795918, 0, 0.9130435, 0)
+Button.BackgroundTransparency = 0.4
+Button.Position = UDim2.new(0.5, 0, 0.5, 0)
+Button.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+Button.Parent = Toggle
+
+local UICorner13 = Instance.new("UICorner")
+UICorner13.Parent = Button
+
+local On = Instance.new("TextButton")
+On.Name = "On"
+On.Visible = false
+On.Size = UDim2.new(0.5078534, 0, 1, 0)
+On.Position = UDim2.new(-0.0052356, 0, 0, 0)
+On.BackgroundColor3 = Color3.fromRGB(126, 255, 117)
+On.FontSize = Enum.FontSize.Size14
+On.TextSize = 14
+On.TextColor3 = Color3.fromRGB(78, 74, 91)
+On.Text = "On"
+On.TextWrapped = true
+On.Font = Enum.Font.Nunito
+On.TextWrap = true
+On.TextScaled = true
+On.Parent = Button
+
+local UICorner14 = Instance.new("UICorner")
+UICorner14.Parent = On
+
+local Off = Instance.new("TextButton")
+Off.Name = "Off"
+Off.Size = UDim2.new(0.4973822, 0, 1, 0)
+Off.Position = UDim2.new(0.5026178, 0, 0, 0)
+Off.BackgroundColor3 = Color3.fromRGB(255, 117, 131)
+Off.FontSize = Enum.FontSize.Size14
+Off.TextSize = 14
+Off.TextColor3 = Color3.fromRGB(78, 74, 91)
+Off.Text = "Off"
+Off.TextWrapped = true
+Off.Font = Enum.Font.Nunito
+Off.TextWrap = true
+Off.TextScaled = true
+Off.Parent = Button
+
+local UICorner15 = Instance.new("UICorner")
+UICorner15.Parent = Off
+
+local PrimaryColor = Instance.new("Color3Value")
+PrimaryColor.Name = "PrimaryColor"
+PrimaryColor.Parent = Button
+
+local SecondaryColor9 = Instance.new("Color3Value")
+SecondaryColor9.Name = "SecondaryColor"
+SecondaryColor9.Parent = Toggle
+
+local PrimaryColor1 = Instance.new("Color3Value")
+PrimaryColor1.Name = "PrimaryColor"
+PrimaryColor1.Parent = AimbotToggle
+
+local EspToggle = Instance.new("TextLabel")
+EspToggle.Name = "EspToggle"
+EspToggle.Size = UDim2.new(0.5050505, 0, 0.0597495, 0)
+EspToggle.BackgroundTransparency = 1
+EspToggle.Position = UDim2.new(0.2474747, 0, 0.2143093, 0)
+EspToggle.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+EspToggle.FontSize = Enum.FontSize.Size14
+EspToggle.TextSize = 14
+EspToggle.TextColor3 = Color3.fromRGB(220, 204, 255)
+EspToggle.Text = "ESP"
+EspToggle.TextWrapped = true
+EspToggle.Font = Enum.Font.Nunito
+EspToggle.TextWrap = true
+EspToggle.TextScaled = true
+EspToggle.Parent = Toggles
+
+local UICorner16 = Instance.new("UICorner")
+UICorner16.Parent = EspToggle
+
+local PrimaryColor2 = Instance.new("Color3Value")
+PrimaryColor2.Name = "PrimaryColor"
+PrimaryColor2.Parent = EspToggle
+
+local Toggle1 = Instance.new("Frame")
+Toggle1.Name = "Toggle"
+Toggle1.AnchorPoint = Vector2.new(0.5, 0.5)
+Toggle1.Size = UDim2.new(0.9800001, 0, 1.4363443, 0)
+Toggle1.BackgroundTransparency = 0.4
+Toggle1.Position = UDim2.new(0.4899998, 0, 1.7173672, 0)
+Toggle1.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Toggle1.Parent = EspToggle
+
+local UICorner17 = Instance.new("UICorner")
+UICorner17.Parent = Toggle1
+
+local Button1 = Instance.new("Frame")
+Button1.Name = "Button"
+Button1.AnchorPoint = Vector2.new(0.5, 0.5)
+Button1.Size = UDim2.new(0.9795918, 0, 0.9130435, 0)
+Button1.BackgroundTransparency = 0.4
+Button1.Position = UDim2.new(0.5, 0, 0.5, 0)
+Button1.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+Button1.Parent = Toggle1
+
+local UICorner18 = Instance.new("UICorner")
+UICorner18.Parent = Button1
+
+local On1 = Instance.new("TextButton")
+On1.Name = "On"
+On1.Visible = false
+On1.Size = UDim2.new(0.5078534, 0, 1, 0)
+On1.Position = UDim2.new(-0.0052356, 0, 0, 0)
+On1.BackgroundColor3 = Color3.fromRGB(126, 255, 117)
+On1.FontSize = Enum.FontSize.Size14
+On1.TextSize = 14
+On1.TextColor3 = Color3.fromRGB(78, 74, 91)
+On1.Text = "On"
+On1.TextWrapped = true
+On1.Font = Enum.Font.Nunito
+On1.TextWrap = true
+On1.TextScaled = true
+On1.Parent = Button1
+
+local UICorner19 = Instance.new("UICorner")
+UICorner19.Parent = On1
+
+local Off1 = Instance.new("TextButton")
+Off1.Name = "Off"
+Off1.Size = UDim2.new(0.4973822, 0, 1, 0)
+Off1.Position = UDim2.new(0.5026178, 0, 0, 0)
+Off1.BackgroundColor3 = Color3.fromRGB(255, 117, 131)
+Off1.FontSize = Enum.FontSize.Size14
+Off1.TextSize = 14
+Off1.TextColor3 = Color3.fromRGB(78, 74, 91)
+Off1.Text = "Off"
+Off1.TextWrapped = true
+Off1.Font = Enum.Font.Nunito
+Off1.TextWrap = true
+Off1.TextScaled = true
+Off1.Parent = Button1
+
+local UICorner20 = Instance.new("UICorner")
+UICorner20.Parent = Off1
+
+local PrimaryColor3 = Instance.new("Color3Value")
+PrimaryColor3.Name = "PrimaryColor"
+PrimaryColor3.Parent = Button1
+
+local SecondaryColor10 = Instance.new("Color3Value")
+SecondaryColor10.Name = "SecondaryColor"
+SecondaryColor10.Parent = Toggle1
+
+local Keybinds = Instance.new("Folder")
+Keybinds.Name = "Keybinds"
+Keybinds.Parent = Main
+
+local AimbotKey = Instance.new("TextLabel")
+AimbotKey.Name = "AimbotKey"
+AimbotKey.Size = UDim2.new(0.5050505, 0, 0.0597495, 0)
+AimbotKey.BackgroundTransparency = 1
+AimbotKey.Position = UDim2.new(0.2474747, 0, 0.4527737, 0)
+AimbotKey.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+AimbotKey.FontSize = Enum.FontSize.Size14
+AimbotKey.TextSize = 14
+AimbotKey.TextColor3 = Color3.fromRGB(220, 204, 255)
+AimbotKey.Text = "Aimbot Keybind"
+AimbotKey.TextWrapped = true
+AimbotKey.Font = Enum.Font.Nunito
+AimbotKey.TextWrap = true
+AimbotKey.TextScaled = true
+AimbotKey.Parent = Keybinds
+
+local UICorner21 = Instance.new("UICorner")
+UICorner21.Parent = AimbotKey
+
+local Keybind = Instance.new("Frame")
+Keybind.Name = "Keybind"
+Keybind.AnchorPoint = Vector2.new(0.5, 0.5)
+Keybind.Size = UDim2.new(0.45, 0, 2.8062186, 0)
+Keybind.BackgroundTransparency = 0.4
+Keybind.Position = UDim2.new(0.4900002, 0, 2.400876, 0)
+Keybind.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Keybind.Parent = AimbotKey
+
+local UICorner22 = Instance.new("UICorner")
+UICorner22.Parent = Keybind
+
+local Button2 = Instance.new("TextButton")
+Button2.Name = "Button"
+Button2.Size = UDim2.new(0.9555556, 0, 0.9555556, 0)
+Button2.BackgroundTransparency = 0.4
+Button2.Position = UDim2.new(0.0222223, 0, 0.0222223, 0)
+Button2.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+Button2.FontSize = Enum.FontSize.Size14
+Button2.TextSize = 14
+Button2.TextColor3 = Color3.fromRGB(220, 204, 255)
+Button2.Text = "Mouse2"
+Button2.TextWrapped = true
+Button2.Font = Enum.Font.Nunito
+Button2.TextWrap = true
+Button2.TextScaled = true
+Button2.Parent = Keybind
+
+local UICorner23 = Instance.new("UICorner")
+UICorner23.Parent = Button2
+
+local PrimaryColor4 = Instance.new("Color3Value")
+PrimaryColor4.Name = "PrimaryColor"
+PrimaryColor4.Parent = Button2
+
+local SecondaryColor11 = Instance.new("Color3Value")
+SecondaryColor11.Name = "SecondaryColor"
+SecondaryColor11.Parent = Keybind
+
+local PrimaryColor5 = Instance.new("Color3Value")
+PrimaryColor5.Name = "PrimaryColor"
+PrimaryColor5.Parent = AimbotKey
+
+local OpenCust = Instance.new("ImageButton")
+OpenCust.Name = "OpenCust"
+OpenCust.Size = UDim2.new(0.1313131, 0, 0.0875798, 0)
+OpenCust.BackgroundTransparency = 1
+OpenCust.Position = UDim2.new(0.4292928, 0, 0.8663388, 0)
+OpenCust.BorderSizePixel = 0
+OpenCust.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+OpenCust.ImageColor3 = Color3.fromRGB(220, 204, 255)
+OpenCust.ImageTransparency = 0.4
+OpenCust.Image = "rbxassetid://12060933763"
+OpenCust.Parent = Main
+
+local SecondaryColor12 = Instance.new("Color3Value")
+SecondaryColor12.Name = "SecondaryColor"
+SecondaryColor12.Parent = OpenCust
+
+local PrimaryColor6 = Instance.new("Color3Value")
+PrimaryColor6.Name = "PrimaryColor"
+PrimaryColor6.Parent = Main
+
+local SecondaryColor13 = Instance.new("Color3Value")
+SecondaryColor13.Name = "SecondaryColor"
+SecondaryColor13.Parent = AimbotGui
+
+local Customization = Instance.new("Frame")
+Customization.Name = "Customization"
+Customization.AnchorPoint = Vector2.new(0.5, 0.5)
+Customization.Visible = false
+Customization.Size = UDim2.new(0.99, 0, 0.9925926, 0)
+Customization.BackgroundTransparency = 0.4
+Customization.Position = UDim2.new(0.5, 0, 0.5, 0)
+Customization.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+Customization.Parent = AimbotGui
+
+local UICorner24 = Instance.new("UICorner")
+UICorner24.Parent = Customization
+
+local Colors = Instance.new("Folder")
+Colors.Name = "Colors"
+Colors.Parent = Customization
+
+local PrimaryColor7 = Instance.new("TextLabel")
+PrimaryColor7.Name = "PrimaryColor"
+PrimaryColor7.Size = UDim2.new(0.5050505, 0, 0.0597495, 0)
+PrimaryColor7.BackgroundTransparency = 1
+PrimaryColor7.Position = UDim2.new(0.2474747, 0, 0.0615431, 0)
+PrimaryColor7.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+PrimaryColor7.FontSize = Enum.FontSize.Size14
+PrimaryColor7.TextSize = 14
+PrimaryColor7.TextColor3 = Color3.fromRGB(220, 204, 255)
+PrimaryColor7.Text = "Primary Color"
+PrimaryColor7.TextWrapped = true
+PrimaryColor7.Font = Enum.Font.Nunito
+PrimaryColor7.TextWrap = true
+PrimaryColor7.TextScaled = true
+PrimaryColor7.Parent = Colors
+
+local UICorner25 = Instance.new("UICorner")
+UICorner25.Parent = PrimaryColor7
+
+local Green = Instance.new("Frame")
+Green.Name = "Green"
+Green.AnchorPoint = Vector2.new(0.5, 0.5)
+Green.Size = UDim2.new(0.25, 0, 1.2472082, 0)
+Green.BackgroundTransparency = 0.4
+Green.Position = UDim2.new(0.5000002, 0, 1.6213708, 0)
+Green.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Green.Parent = PrimaryColor7
+
+local UICorner26 = Instance.new("UICorner")
+UICorner26.Parent = Green
+
+local SecondaryColor14 = Instance.new("Color3Value")
+SecondaryColor14.Name = "SecondaryColor"
+SecondaryColor14.Parent = Green
+
+local TextBox = Instance.new("TextBox")
+TextBox.AnchorPoint = Vector2.new(0.5, 0.5)
+TextBox.Size = UDim2.new(0.92, 0, 0.9, 0)
+TextBox.BackgroundTransparency = 0.4
+TextBox.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextBox.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+TextBox.FontSize = Enum.FontSize.Size14
+TextBox.PlaceholderColor3 = Color3.fromRGB(220, 204, 255)
+TextBox.TextWrapped = true
+TextBox.TextSize = 14
+TextBox.TextWrap = true
+TextBox.TextColor3 = Color3.fromRGB(220, 204, 255)
+TextBox.Text = "74"
+TextBox.Font = Enum.Font.Nunito
+TextBox.TextScaled = true
+TextBox.Parent = Green
+
+local UICorner27 = Instance.new("UICorner")
+UICorner27.Parent = TextBox
+
+local PrimaryColor8 = Instance.new("Color3Value")
+PrimaryColor8.Name = "PrimaryColor"
+PrimaryColor8.Parent = TextBox
+
+local CLetter = Instance.new("TextLabel")
+CLetter.Name = "CLetter"
+CLetter.Size = UDim2.new(0.6325257, 0, 0.8597481, 0)
+CLetter.BackgroundTransparency = 1
+CLetter.Position = UDim2.new(0.1799994, 0, 1.1615433, 0)
+CLetter.BorderSizePixel = 0
+CLetter.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+CLetter.FontSize = Enum.FontSize.Size14
+CLetter.TextSize = 14
+CLetter.TextColor3 = Color3.fromRGB(0, 255, 0)
+CLetter.Text = "G"
+CLetter.TextWrapped = true
+CLetter.Font = Enum.Font.Nunito
+CLetter.TextWrap = true
+CLetter.TextScaled = true
+CLetter.Parent = Green
+
+local PrimaryColor9 = Instance.new("Color3Value")
+PrimaryColor9.Name = "PrimaryColor"
+PrimaryColor9.Parent = PrimaryColor7
+
+local Red = Instance.new("Frame")
+Red.Name = "Red"
+Red.AnchorPoint = Vector2.new(0.5, 0.5)
+Red.Size = UDim2.new(0.25, 0, 1.2472082, 0)
+Red.BackgroundTransparency = 0.4
+Red.Position = UDim2.new(0.1950002, 0, 1.6213708, 0)
+Red.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Red.Parent = PrimaryColor7
+
+local UICorner28 = Instance.new("UICorner")
+UICorner28.Parent = Red
+
+local SecondaryColor15 = Instance.new("Color3Value")
+SecondaryColor15.Name = "SecondaryColor"
+SecondaryColor15.Parent = Red
+
+local TextBox1 = Instance.new("TextBox")
+TextBox1.AnchorPoint = Vector2.new(0.5, 0.5)
+TextBox1.Size = UDim2.new(0.92, 0, 0.9, 0)
+TextBox1.BackgroundTransparency = 0.4
+TextBox1.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextBox1.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+TextBox1.FontSize = Enum.FontSize.Size14
+TextBox1.PlaceholderColor3 = Color3.fromRGB(220, 204, 255)
+TextBox1.TextWrapped = true
+TextBox1.TextSize = 14
+TextBox1.TextWrap = true
+TextBox1.TextColor3 = Color3.fromRGB(220, 204, 255)
+TextBox1.Text = "78"
+TextBox1.Font = Enum.Font.Nunito
+TextBox1.TextScaled = true
+TextBox1.Parent = Red
+
+local UICorner29 = Instance.new("UICorner")
+UICorner29.Parent = TextBox1
+
+local PrimaryColor10 = Instance.new("Color3Value")
+PrimaryColor10.Name = "PrimaryColor"
+PrimaryColor10.Parent = TextBox1
+
+local CLetter1 = Instance.new("TextLabel")
+CLetter1.Name = "CLetter"
+CLetter1.Size = UDim2.new(0.6325257, 0, 0.8597481, 0)
+CLetter1.BackgroundTransparency = 1
+CLetter1.Position = UDim2.new(0.1799994, 0, 1.1615433, 0)
+CLetter1.BorderSizePixel = 0
+CLetter1.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+CLetter1.FontSize = Enum.FontSize.Size14
+CLetter1.TextSize = 14
+CLetter1.TextColor3 = Color3.fromRGB(255, 0, 0)
+CLetter1.Text = "R"
+CLetter1.TextWrapped = true
+CLetter1.Font = Enum.Font.Nunito
+CLetter1.TextWrap = true
+CLetter1.TextScaled = true
+CLetter1.Parent = Red
+
+local Blue = Instance.new("Frame")
+Blue.Name = "Blue"
+Blue.AnchorPoint = Vector2.new(0.5, 0.5)
+Blue.Size = UDim2.new(0.25, 0, 1.2472082, 0)
+Blue.BackgroundTransparency = 0.4
+Blue.Position = UDim2.new(0.8050003, 0, 1.6213708, 0)
+Blue.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Blue.Parent = PrimaryColor7
+
+local UICorner30 = Instance.new("UICorner")
+UICorner30.Parent = Blue
+
+local SecondaryColor16 = Instance.new("Color3Value")
+SecondaryColor16.Name = "SecondaryColor"
+SecondaryColor16.Parent = Blue
+
+local TextBox2 = Instance.new("TextBox")
+TextBox2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextBox2.Size = UDim2.new(0.92, 0, 0.9, 0)
+TextBox2.BackgroundTransparency = 0.4
+TextBox2.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextBox2.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+TextBox2.FontSize = Enum.FontSize.Size14
+TextBox2.PlaceholderColor3 = Color3.fromRGB(220, 204, 255)
+TextBox2.TextWrapped = true
+TextBox2.TextSize = 14
+TextBox2.TextWrap = true
+TextBox2.TextColor3 = Color3.fromRGB(220, 204, 255)
+TextBox2.Text = "91"
+TextBox2.Font = Enum.Font.Nunito
+TextBox2.TextScaled = true
+TextBox2.Parent = Blue
+
+local UICorner31 = Instance.new("UICorner")
+UICorner31.Parent = TextBox2
+
+local PrimaryColor11 = Instance.new("Color3Value")
+PrimaryColor11.Name = "PrimaryColor"
+PrimaryColor11.Parent = TextBox2
+
+local CLetter2 = Instance.new("TextLabel")
+CLetter2.Name = "CLetter"
+CLetter2.Size = UDim2.new(0.6325257, 0, 0.8597481, 0)
+CLetter2.BackgroundTransparency = 1
+CLetter2.Position = UDim2.new(0.1799994, 0, 1.1615433, 0)
+CLetter2.BorderSizePixel = 0
+CLetter2.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+CLetter2.FontSize = Enum.FontSize.Size14
+CLetter2.TextSize = 14
+CLetter2.TextColor3 = Color3.fromRGB(0, 0, 255)
+CLetter2.Text = "B"
+CLetter2.TextWrapped = true
+CLetter2.Font = Enum.Font.Nunito
+CLetter2.TextWrap = true
+CLetter2.TextScaled = true
+CLetter2.Parent = Blue
+
+local SecondaryColor17 = Instance.new("TextLabel")
+SecondaryColor17.Name = "SecondaryColor"
+SecondaryColor17.Size = UDim2.new(0.5050505, 0, 0.0597495, 0)
+SecondaryColor17.BackgroundTransparency = 1
+SecondaryColor17.Position = UDim2.new(0.2474747, 0, 0.2701781, 0)
+SecondaryColor17.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+SecondaryColor17.FontSize = Enum.FontSize.Size14
+SecondaryColor17.TextSize = 14
+SecondaryColor17.TextColor3 = Color3.fromRGB(220, 204, 255)
+SecondaryColor17.Text = "Secondary Color"
+SecondaryColor17.TextWrapped = true
+SecondaryColor17.Font = Enum.Font.Nunito
+SecondaryColor17.TextWrap = true
+SecondaryColor17.TextScaled = true
+SecondaryColor17.Parent = Colors
+
+local UICorner32 = Instance.new("UICorner")
+UICorner32.Parent = SecondaryColor17
+
+local Green1 = Instance.new("Frame")
+Green1.Name = "Green"
+Green1.AnchorPoint = Vector2.new(0.5, 0.5)
+Green1.Size = UDim2.new(0.25, 0, 1.2472082, 0)
+Green1.BackgroundTransparency = 0.4
+Green1.Position = UDim2.new(0.5000002, 0, 1.6213708, 0)
+Green1.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Green1.Parent = SecondaryColor17
+
+local UICorner33 = Instance.new("UICorner")
+UICorner33.Parent = Green1
+
+local SecondaryColor18 = Instance.new("Color3Value")
+SecondaryColor18.Name = "SecondaryColor"
+SecondaryColor18.Parent = Green1
+
+local TextBox3 = Instance.new("TextBox")
+TextBox3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextBox3.Size = UDim2.new(0.92, 0, 0.9, 0)
+TextBox3.BackgroundTransparency = 0.4
+TextBox3.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextBox3.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+TextBox3.FontSize = Enum.FontSize.Size14
+TextBox3.PlaceholderColor3 = Color3.fromRGB(220, 204, 255)
+TextBox3.TextWrapped = true
+TextBox3.TextSize = 14
+TextBox3.TextWrap = true
+TextBox3.TextColor3 = Color3.fromRGB(220, 204, 255)
+TextBox3.Text = "204"
+TextBox3.Font = Enum.Font.Nunito
+TextBox3.TextScaled = true
+TextBox3.Parent = Green1
+
+local UICorner34 = Instance.new("UICorner")
+UICorner34.Parent = TextBox3
+
+local PrimaryColor12 = Instance.new("Color3Value")
+PrimaryColor12.Name = "PrimaryColor"
+PrimaryColor12.Parent = TextBox3
+
+local CLetter3 = Instance.new("TextLabel")
+CLetter3.Name = "CLetter"
+CLetter3.Size = UDim2.new(0.6325257, 0, 0.8597481, 0)
+CLetter3.BackgroundTransparency = 1
+CLetter3.Position = UDim2.new(0.1799994, 0, 1.1615433, 0)
+CLetter3.BorderSizePixel = 0
+CLetter3.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+CLetter3.FontSize = Enum.FontSize.Size14
+CLetter3.TextSize = 14
+CLetter3.TextColor3 = Color3.fromRGB(0, 255, 0)
+CLetter3.Text = "G"
+CLetter3.TextWrapped = true
+CLetter3.Font = Enum.Font.Nunito
+CLetter3.TextWrap = true
+CLetter3.TextScaled = true
+CLetter3.Parent = Green1
+
+local PrimaryColor13 = Instance.new("Color3Value")
+PrimaryColor13.Name = "PrimaryColor"
+PrimaryColor13.Parent = SecondaryColor17
+
+local Red1 = Instance.new("Frame")
+Red1.Name = "Red"
+Red1.AnchorPoint = Vector2.new(0.5, 0.5)
+Red1.Size = UDim2.new(0.25, 0, 1.2472082, 0)
+Red1.BackgroundTransparency = 0.4
+Red1.Position = UDim2.new(0.1950002, 0, 1.6213708, 0)
+Red1.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Red1.Parent = SecondaryColor17
+
+local UICorner35 = Instance.new("UICorner")
+UICorner35.Parent = Red1
+
+local SecondaryColor19 = Instance.new("Color3Value")
+SecondaryColor19.Name = "SecondaryColor"
+SecondaryColor19.Parent = Red1
+
+local TextBox4 = Instance.new("TextBox")
+TextBox4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextBox4.Size = UDim2.new(0.92, 0, 0.9, 0)
+TextBox4.BackgroundTransparency = 0.4
+TextBox4.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextBox4.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+TextBox4.FontSize = Enum.FontSize.Size14
+TextBox4.PlaceholderColor3 = Color3.fromRGB(220, 204, 255)
+TextBox4.TextWrapped = true
+TextBox4.TextSize = 14
+TextBox4.TextWrap = true
+TextBox4.TextColor3 = Color3.fromRGB(220, 204, 255)
+TextBox4.Text = "220"
+TextBox4.Font = Enum.Font.Nunito
+TextBox4.TextScaled = true
+TextBox4.Parent = Red1
+
+local UICorner36 = Instance.new("UICorner")
+UICorner36.Parent = TextBox4
+
+local PrimaryColor14 = Instance.new("Color3Value")
+PrimaryColor14.Name = "PrimaryColor"
+PrimaryColor14.Parent = TextBox4
+
+local CLetter4 = Instance.new("TextLabel")
+CLetter4.Name = "CLetter"
+CLetter4.Size = UDim2.new(0.6325257, 0, 0.8597481, 0)
+CLetter4.BackgroundTransparency = 1
+CLetter4.Position = UDim2.new(0.1799994, 0, 1.1615433, 0)
+CLetter4.BorderSizePixel = 0
+CLetter4.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+CLetter4.FontSize = Enum.FontSize.Size14
+CLetter4.TextSize = 14
+CLetter4.TextColor3 = Color3.fromRGB(255, 0, 0)
+CLetter4.Text = "R"
+CLetter4.TextWrapped = true
+CLetter4.Font = Enum.Font.Nunito
+CLetter4.TextWrap = true
+CLetter4.TextScaled = true
+CLetter4.Parent = Red1
+
+local Blue1 = Instance.new("Frame")
+Blue1.Name = "Blue"
+Blue1.AnchorPoint = Vector2.new(0.5, 0.5)
+Blue1.Size = UDim2.new(0.25, 0, 1.2472082, 0)
+Blue1.BackgroundTransparency = 0.4
+Blue1.Position = UDim2.new(0.8050003, 0, 1.6213708, 0)
+Blue1.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Blue1.Parent = SecondaryColor17
+
+local UICorner37 = Instance.new("UICorner")
+UICorner37.Parent = Blue1
+
+local SecondaryColor20 = Instance.new("Color3Value")
+SecondaryColor20.Name = "SecondaryColor"
+SecondaryColor20.Parent = Blue1
+
+local TextBox5 = Instance.new("TextBox")
+TextBox5.AnchorPoint = Vector2.new(0.5, 0.5)
+TextBox5.Size = UDim2.new(0.92, 0, 0.9, 0)
+TextBox5.BackgroundTransparency = 0.4
+TextBox5.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextBox5.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+TextBox5.FontSize = Enum.FontSize.Size14
+TextBox5.PlaceholderColor3 = Color3.fromRGB(220, 204, 255)
+TextBox5.TextWrapped = true
+TextBox5.TextSize = 14
+TextBox5.TextWrap = true
+TextBox5.TextColor3 = Color3.fromRGB(220, 204, 255)
+TextBox5.Text = "255"
+TextBox5.Font = Enum.Font.Nunito
+TextBox5.TextScaled = true
+TextBox5.Parent = Blue1
+
+local UICorner38 = Instance.new("UICorner")
+UICorner38.Parent = TextBox5
+
+local PrimaryColor15 = Instance.new("Color3Value")
+PrimaryColor15.Name = "PrimaryColor"
+PrimaryColor15.Parent = TextBox5
+
+local CLetter5 = Instance.new("TextLabel")
+CLetter5.Name = "CLetter"
+CLetter5.Size = UDim2.new(0.6325257, 0, 0.8597481, 0)
+CLetter5.BackgroundTransparency = 1
+CLetter5.Position = UDim2.new(0.1799994, 0, 1.1615433, 0)
+CLetter5.BorderSizePixel = 0
+CLetter5.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+CLetter5.FontSize = Enum.FontSize.Size14
+CLetter5.TextSize = 14
+CLetter5.TextColor3 = Color3.fromRGB(0, 0, 255)
+CLetter5.Text = "B"
+CLetter5.TextWrapped = true
+CLetter5.Font = Enum.Font.Nunito
+CLetter5.TextWrap = true
+CLetter5.TextScaled = true
+CLetter5.Parent = Blue1
+
+local GoBack = Instance.new("ImageButton")
+GoBack.Name = "GoBack"
+GoBack.Size = UDim2.new(0.1010101, 0, 0.0745201, 0)
+GoBack.BackgroundTransparency = 1
+GoBack.Position = UDim2.new(0.4444444, 0, 0.8812643, 0)
+GoBack.BorderSizePixel = 0
+GoBack.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GoBack.ImageColor3 = Color3.fromRGB(220, 204, 255)
+GoBack.ImageTransparency = 0.4
+GoBack.Image = "rbxassetid://12059777136"
+GoBack.Parent = Customization
+
+local SecondaryColor21 = Instance.new("Color3Value")
+SecondaryColor21.Name = "SecondaryColor"
+SecondaryColor21.Parent = GoBack
+
+local PrimaryColor16 = Instance.new("Color3Value")
+PrimaryColor16.Name = "PrimaryColor"
+PrimaryColor16.Parent = Customization
+
+local Numbers = Instance.new("Folder")
+Numbers.Name = "Numbers"
+Numbers.Parent = Customization
+
+local Transparency = Instance.new("TextLabel")
+Transparency.Name = "Transparency"
+Transparency.Size = UDim2.new(0.5050505, 0, 0.0597495, 0)
+Transparency.BackgroundTransparency = 1
+Transparency.Position = UDim2.new(0.2474747, 0, 0.4862704, 0)
+Transparency.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+Transparency.FontSize = Enum.FontSize.Size14
+Transparency.TextSize = 14
+Transparency.TextColor3 = Color3.fromRGB(220, 204, 255)
+Transparency.Text = "Transparency"
+Transparency.TextWrapped = true
+Transparency.Font = Enum.Font.Nunito
+Transparency.TextWrap = true
+Transparency.TextScaled = true
+Transparency.Parent = Numbers
+
+local UICorner39 = Instance.new("UICorner")
+UICorner39.Parent = Transparency
+
+local Green2 = Instance.new("Frame")
+Green2.Name = "Green"
+Green2.AnchorPoint = Vector2.new(0.5, 0.5)
+Green2.Size = UDim2.new(0.3, 0, 1.8708124, 0)
+Green2.BackgroundTransparency = 0.4
+Green2.Position = UDim2.new(0.5, 0, 1.9331729, 0)
+Green2.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Green2.Parent = Transparency
+
+local UICorner40 = Instance.new("UICorner")
+UICorner40.Parent = Green2
+
+local SecondaryColor22 = Instance.new("Color3Value")
+SecondaryColor22.Name = "SecondaryColor"
+SecondaryColor22.Parent = Green2
+
+local TextBox6 = Instance.new("TextBox")
+TextBox6.AnchorPoint = Vector2.new(0.5, 0.5)
+TextBox6.Size = UDim2.new(0.9333334, 0, 0.9333333, 0)
+TextBox6.BackgroundTransparency = 0.4
+TextBox6.Position = UDim2.new(0.5000001, 0, 0.5, 0)
+TextBox6.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+TextBox6.FontSize = Enum.FontSize.Size14
+TextBox6.PlaceholderColor3 = Color3.fromRGB(220, 204, 255)
+TextBox6.TextWrapped = true
+TextBox6.TextSize = 14
+TextBox6.TextWrap = true
+TextBox6.TextColor3 = Color3.fromRGB(220, 204, 255)
+TextBox6.Text = "0.4"
+TextBox6.Font = Enum.Font.Nunito
+TextBox6.TextScaled = true
+TextBox6.Parent = Green2
+
+local UICorner41 = Instance.new("UICorner")
+UICorner41.Parent = TextBox6
+
+local PrimaryColor17 = Instance.new("Color3Value")
+PrimaryColor17.Name = "PrimaryColor"
+PrimaryColor17.Parent = TextBox6
+
+local PrimaryColor18 = Instance.new("Color3Value")
+PrimaryColor18.Name = "PrimaryColor"
+PrimaryColor18.Parent = Transparency
+
+local Scale1 = Instance.new("TextLabel")
+Scale1.Name = "Scale"
+Scale1.Size = UDim2.new(0.5050505, 0, 0.0597495, 0)
+Scale1.BackgroundTransparency = 1
+Scale1.Position = UDim2.new(0.2474747, 0, 0.6709719, 0)
+Scale1.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+Scale1.FontSize = Enum.FontSize.Size14
+Scale1.TextSize = 14
+Scale1.TextColor3 = Color3.fromRGB(220, 204, 255)
+Scale1.Text = "Scale"
+Scale1.TextWrapped = true
+Scale1.Font = Enum.Font.Nunito
+Scale1.TextWrap = true
+Scale1.TextScaled = true
+Scale1.Parent = Numbers
+
+local UICorner42 = Instance.new("UICorner")
+UICorner42.Parent = Scale1
+
+local Green3 = Instance.new("Frame")
+Green3.Name = "Green"
+Green3.AnchorPoint = Vector2.new(0.5, 0.5)
+Green3.Size = UDim2.new(0.3, 0, 1.8708124, 0)
+Green3.BackgroundTransparency = 0.4
+Green3.Position = UDim2.new(0.5, 0, 1.9331729, 0)
+Green3.BackgroundColor3 = Color3.fromRGB(220, 204, 255)
+Green3.Parent = Scale1
+
+local UICorner43 = Instance.new("UICorner")
+UICorner43.Parent = Green3
+
+local SecondaryColor23 = Instance.new("Color3Value")
+SecondaryColor23.Name = "SecondaryColor"
+SecondaryColor23.Parent = Green3
+
+local TextBox7 = Instance.new("TextBox")
+TextBox7.AnchorPoint = Vector2.new(0.5, 0.5)
+TextBox7.Size = UDim2.new(0.9333334, 0, 0.9333333, 0)
+TextBox7.BackgroundTransparency = 0.4
+TextBox7.Position = UDim2.new(0.5000001, 0, 0.5, 0)
+TextBox7.BackgroundColor3 = Color3.fromRGB(78, 74, 91)
+TextBox7.FontSize = Enum.FontSize.Size14
+TextBox7.PlaceholderColor3 = Color3.fromRGB(220, 204, 255)
+TextBox7.TextWrapped = true
+TextBox7.TextSize = 14
+TextBox7.TextWrap = true
+TextBox7.TextColor3 = Color3.fromRGB(220, 204, 255)
+TextBox7.Text = "1"
+TextBox7.Font = Enum.Font.Nunito
+TextBox7.TextScaled = true
+TextBox7.Parent = Green3
+
+local UICorner44 = Instance.new("UICorner")
+UICorner44.Parent = TextBox7
+
+local PrimaryColor19 = Instance.new("Color3Value")
+PrimaryColor19.Name = "PrimaryColor"
+PrimaryColor19.Parent = TextBox7
+
+local PrimaryColor20 = Instance.new("Color3Value")
+PrimaryColor20.Name = "PrimaryColor"
+PrimaryColor20.Parent = Scale1
+
+ScriptGuis.Parent = game:GetService("StarterGui")
