@@ -1051,3 +1051,5 @@ PrimaryColor20.Name = "PrimaryColor"
 PrimaryColor20.Parent = Scale1
 
 ScriptGuis.Parent = game:GetService("StarterGui")
+
+return ScriptGuis
